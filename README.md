@@ -1,5 +1,5 @@
 # nfs_exporter
-NFS exporter for Prometheus
+NFS exporter for Prometheus (built for ARM)
 
 ## Installation
 
@@ -11,6 +11,12 @@ go get -u -v github.com/aixeshunter/nfs_exporter
 
 
 ## Usage of `nfs_exporter`
+
+With docker:
+
+```
+$ docker run -itd -p 9689:9689 pistacks/nfs-exporter --nfs.address=192.168.0.115 --nfs.storage-path=/opt/nfs
+```
 
 | Option                    | Default             | Description
 | ------------------------- | ------------------- | -----------------
